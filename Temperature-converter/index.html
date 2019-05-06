@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+  <title>Temperature Converter</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="normalize.css" type="text/css" media="all" />
+
+  <link rel="stylesheet" href="application.css" type="text/css" media="all" />
+
+</head>
+
+<body>
+  <header role="banner" id="page_header" class="page-header">
+    <h1>Temperature Converter</h1>
+  </header>
+<body>
+		</select>
+		<div id="sect">
+		<section class="page-header">
+				<select onchange="onChange('from'); calculate()" id="selectFrom">
+					<option value="Celcius">Celcius</option>
+					<option value="Farenheit">Farenheit</option>
+					<option value="Kelvin">Kelvin</option>
+				</select>
+				<span class="toText">to</span>
+				<select onchange="onChange('to'); calculate()" id="selectTo">
+					<option value="Celcius">Celcius</option>
+					<option value="Farenheit">Farenheit</option>
+					<option value="Kelvin">Kelvin</option>
+				</select>
+			</section>
+			<section class="page-header">
+				<input type="text" id="from" onchange="calculate()"> <span 
+id="toText"> to </span> <input type="text" id="to">
+			</section>
+			<br>
+
+			<section>
+				<p id="results"></p>
+			</section>
+		</div>
+		<footer role="contentinfo" id="page_footer" class="page-footer">
+    Made by <a href="https://github.com/Shourov1?tab=repositories">Shourov</a>
+  </footer>
+		<script src="Temp.js"></script>
+	</body>
+	</html>
